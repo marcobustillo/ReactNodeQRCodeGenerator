@@ -1,0 +1,22 @@
+{
+  "name": "qrcodegenerator",
+  "version": "1.0.0",
+  "description": "QR Code generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev" : "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Marco Polo Bustillo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "qrcode": "^1.2.2"
+  }
+}
